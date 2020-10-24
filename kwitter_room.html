@@ -18,21 +18,21 @@
 </head>
 <body>
 <div class="container">
-<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
 	<center>
 		<h1 class="header">	
 			Lets-Chat	
-			<sup>
-				<img src="chattinggb.jpg">
-			</sup>
+			
 		</h1>
+		<h3 id="name"></h3>
 		<h3 class="color_white"></h3>
 		<div class="form-group input_div_room_page">
 			<label>#Join Room:</label>
-
+<input class="form-control" id="join_room" type = "text" placeholder="Enter room name">
 		</div>
-		<button class="btn btn-success">#Join Room</button>
+		<button class="btn btn-success" onclick="joinroom()">#Join Room</button>
 		<h3 class="color_white">#TRENDING ROOMS</h3>
+		<div id="trendingrooms">Trending rooms will be put here</div>
 	
 	</center>
 </div>
